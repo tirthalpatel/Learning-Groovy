@@ -1,0 +1,11 @@
+<?xml version='1.0'?><!--Amazon--><library><book title='XML Developer&apos;s Guide'><id>bk101</id><author>Gambardella, Matthew</author><price>44.95</price><description>An in-depth look at creating applications 
+		  with XML.</description></book><book title='Midnight Rain'><id>bk102</id><author>Ralls, Kim</author><price>5.95</price><description>A former architect battles corporate zombies, 
+		  an evil sorceress, and her own childhood to become queen 
+		  of the world.</description></book><book title='Maeve Ascendant'><id>bk103</id><author>Corets, Eva</author><price>5.95</price><description>After the collapse of a nanotechnology 
+		  society in England, the young survivors lay the 
+		  foundation for a new society.</description></book><book title='Oberon&apos;s Legacy'><id>bk104</id><author>Corets, Eva</author><price>5.95</price><description>In post-apocalypse England, the mysterious 
+		  agent known only as Oberon helps to create a new life 
+		  for the inhabitants of London. Sequel to Maeve 
+		  Ascendant.</description></book><book title='The Sundered Grail'><id>bk105</id><author>Corets, Eva</author><price>5.95</price><description>The two daughters of Maeve, half-sisters, 
+		  battle one another for control of England. Sequel to 
+		  Oberon's Legacy.</description></book></library>
