@@ -3,8 +3,8 @@ Groovy learning made easy
 
 Sample code snippet for getting started with Groovy.
 
-Groovy Setup - installation & Tooling
--------------------------------------
+Groovy Setup - installation
+---------------------------
 * GVM - Groovy enVironment Manager for unix based system
 * For Windows - http://groovy.codehaus.org/Installing+Groovy
 
