@@ -16,6 +16,8 @@ println "---------"
 
 println "3 + 0.5 = " + (3 + 0.5)
 
+println "10 + 10 is equal to ${10+10}" // GString ${expression} example
+
 println "---------"
 
 // -----------------------> Scoping <--------------------

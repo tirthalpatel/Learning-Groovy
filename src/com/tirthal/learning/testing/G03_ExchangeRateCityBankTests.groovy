@@ -5,6 +5,12 @@ import groovy.mock.interceptor.*
 
 // ----------------------- Run the test
 
+/**
+ * Test case to demo mock testing
+ * 
+ * @author tirthalp
+ *
+ */
 class G03_ExchangeRateCityBankTests extends GroovyTestCase {
 
     def void testOfferedUsdToInrRatesUsingStubFor() {

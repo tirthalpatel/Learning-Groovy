@@ -6,6 +6,12 @@ package com.tirthal.learning.testing
 import org.joda.time.DateTime
 import org.joda.time.format.DateTimeFormat
 
+/**
+ * Date parser class
+ * 
+ * @author tirthalp
+ *
+ */
 class G02_DateParser {
     def String parse(time) {
         // !null is equal to "true" in Groovy

@@ -1,7 +1,8 @@
 Groovy learning made easy
 =========================
 
-Sample code snippet for getting started with Groovy.
+Sample code snippet for getting started with Groovy. 
+
 
 Groovy Setup - installation
 ---------------------------
@@ -19,8 +20,11 @@ Groovy Setup - installation
 Setup instructions for this "GroovyQuickStart" project
 ------------------------------------------------------
 (1) Download / Clone this project to your local machine
+
 (2) Just import project in Eclipse having Groovy plugins already installed. 
+
 (3) Fix build path errors (Project -> Properties -> Java Build Path -> Libraries), such as JRE configuration, Groovy Libraries, etc. 
+
 (4) That's it. Now run groovy script files with Groovy Script option (Alt + Shift + X, G) and start exploring code of "*.groovy" files in given sequence of G00*, G01*, G02*...
 
 
@@ -30,17 +34,17 @@ Basic Concepts and Syntax
 
 
 Working with XML
--------------------------
+----------------
 [Learn by code snippet] (https://github.com/tirthalpatel/Learning-Groovy/tree/master/src/com/tirthal/learning/xml)
 
 
 Interoperability between Groovy and Java
--------------------------
+-----------------------------------------
 [Learn by code snippet] (https://github.com/tirthalpatel/Learning-Groovy/tree/master/src/com/tirthal/learning/interoperability)
 
 
 Unit testing in Groovy
--------------------------
+----------------------
 [Learn by code snippet] (https://github.com/tirthalpatel/Learning-Groovy/tree/master/src/com/tirthal/learning/testing)
 
 
@@ -48,3 +52,37 @@ Working with REST services
 -------------------------
 [Learn by code snippet] (https://github.com/tirthalpatel/Learning-Groovy/tree/master/src/com/tirthal/learning/rest)
 
+
+Working with Databases using Groovy
+-------------------------------------
+* Import MySQL libraries
+	- @GrabConfig(systemClassLoader=true)
+	- @Grab('mysql:mysql-connector-java:5.1.6')
+	- import groovy.sql.Sql
+
+* Database connection
+	- def sql = Sql.newInstance("jdbc:mysql://localhost:3306/dbname", "username", "password", "com.mysql.jdbc.Driver")
+
+* Store data
+	- def table = sql.dataSet("tablename")
+	- table.add(x: 123, y: "abc")
+
+* Read and update data
+	- sql.eachRow('select * from table') { 	Println "X: ${it.x}, Y: ${it.y}"  }
+	- sql.executeUpdate("update table set x = 444")
+
+* Close connection
+	- sql.close()
+		
+		
+What’s new in Groovy 2.0?
+-------------------------
+	The newly released Groovy 2.0 brings key static features to the language with static type checking and static compilation, 
+	adopts JDK 7 related improvements with Project Coin syntax enhancements and the support of the new "invoke dynamic" JVM instruction, 
+	and becomes more modular than before. [Read further...] (http://www.infoq.com/articles/new-groovy-20)
+
+
+Groovy 2.3 Introduces Traits
+-----------------------------
+	A trait is a reusable set of methods and fields that can be added to one or more classes. A class can be composed out of multiple traits 
+	without using multiple inheritance (and therefore avoiding the diamond problem). [Read further...] (http://java.dzone.com/articles/groovy-23-introduces-traits)

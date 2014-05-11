@@ -35,7 +35,7 @@ public class G03_CallingGroovyFromJavaUsingClassLoader {
 	
 	public final static String GROOVY_FILE_PATH = "src/com/tirthal/learning/interoperability/G03_CalculateMax.groovy";
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		GroovyClassLoader loader = new GroovyClassLoader(); // Prepare ClassLoader
 		try {
 			
@@ -57,6 +57,8 @@ public class G03_CallingGroovyFromJavaUsingClassLoader {
 		} catch (CompilationFailedException | IOException| InstantiationException | IllegalAccessException e) {
 			System.out.println(e.getMessage());
 			e.printStackTrace();
+		} finally {
+			loader.close();
 		}
 	}
 }

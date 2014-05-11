@@ -6,7 +6,7 @@ package com.tirthal.learning.xml
 
 // --- Simple code of reading XML
 
-// XML as Groovy style code
+// Build XML as Groovy style code
 class XmlExample {
 static def PERSON =
     """
@@ -16,12 +16,14 @@ static def PERSON =
     </person>
     """
 }
+
 // Person definition in Groovy
 class Person {def id; def name; def age}
+
 // Read in XML using XMLParser, which supports GPath expressions for XML documents
 def xmlPerson = new XmlParser().parseText(XmlExample.PERSON)
 // Populate Person GroovyBean
-Person p = new Person(id: xmlPerson.@id, name: xmlPerson.name.text(), age: xmlPerson.age.text())
+Person p = new Person(id: xmlPerson.@id, name: xmlPerson.name.text(), age: xmlPerson.age.text()) // @ is used for accessing attribute 
 println "${p.id}, ${p.name}, ${p.age}"
 
 println "----------"

@@ -1,5 +1,11 @@
 package com.tirthal.learning.testing
 
+/**
+ * Exchange Rate Service class, which is used in G03_ExchangeRateCityBank to demo mocking of external service
+ * 
+ * @author tirthalp
+ *
+ */
 class G03_ExchangeRateGlobalService {
     
     // Retrieve exchange rate for USD to INR currency

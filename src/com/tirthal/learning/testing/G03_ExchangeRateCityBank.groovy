@@ -1,5 +1,11 @@
 package com.tirthal.learning.testing
 
+/**
+ * City Bank Exchange Rate class for mock testing demo
+ * 
+ * @author tirthalp
+ *
+ */
 class G03_ExchangeRateCityBank {
     
     def offeredUsdToInrRates() {

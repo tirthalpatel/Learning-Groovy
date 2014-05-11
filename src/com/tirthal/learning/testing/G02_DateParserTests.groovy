@@ -9,6 +9,12 @@ import groovy.util.GroovyTestCase
 
 // ----------------------- Run the test
 
+/**
+ * Test case of Date Parser class
+ * 
+ * @author tirthalp
+ *
+ */
 class G02_DateParserTests extends GroovyTestCase {
 
     private G02_DateParser parser

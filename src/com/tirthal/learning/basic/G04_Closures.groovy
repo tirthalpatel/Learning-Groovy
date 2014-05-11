@@ -45,20 +45,20 @@ closure() // calling closure code again
 
 println "----"
 
-// ------ Example 2 - passing parameters
+// ------ Example 2 - passing parameters in "printSum" closure
 
 def sumMsg = "Sum is - " // define free variable
-def printSum = { a, b -> println "${sumMsg} ${a+b}" }  // passing a and b parameters
+def printSum = { a, b -> println "${sumMsg} ${a+b}" }  // a and b are input parameters
 
-printSum (3, 7)
+printSum (3, 7) 
 
 println "----"
 
 // ------ Example 3 - implicit variable "it"
 
-def printImplicit = {println it}
+def printImplicit = {println it}  // input value will be assigned to "it" (implicit variable)
 
-printImplicit("Hello Tirthal")
+printImplicit("Hello Tirthal")  // "Hello Tirthal" will be assigned to "it"
 
 println "----"
 
