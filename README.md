@@ -81,7 +81,7 @@ What’s new in Groovy 2.0?
 	adopts JDK 7 related improvements with Project Coin syntax enhancements and the support of the new "invoke dynamic" JVM instruction, 
 	and becomes more modular than before. 
 	
-	[Read further...] (http://www.infoq.com/articles/new-groovy-20)
+	[Read further] (http://www.infoq.com/articles/new-groovy-20)
 
 
 Groovy 2.3 Introduces Traits
@@ -89,4 +89,4 @@ Groovy 2.3 Introduces Traits
 	A trait is a reusable set of methods and fields that can be added to one or more classes. A class can be composed out of multiple traits 
 	without using multiple inheritance (and therefore avoiding the diamond problem). 
 	
-	[Read further...] (http://java.dzone.com/articles/groovy-23-introduces-traits)
+	[Read further] (http://java.dzone.com/articles/groovy-23-introduces-traits)
