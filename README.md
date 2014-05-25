@@ -84,9 +84,25 @@ What’s new in Groovy 2.0?
 [Read further...] (http://www.infoq.com/articles/new-groovy-20)
 
 
-Groovy 2.3 Introduces Traits
------------------------------
-	A trait is a reusable set of methods and fields that can be added to one or more classes. A class can be composed out of multiple traits 
-	without using multiple inheritance (and therefore avoiding the diamond problem). 
-	
-[Read further...] (http://java.dzone.com/articles/groovy-23-introduces-traits)
+Groovy 2.3 - Finale released in May 2014
+-----------------------------------------
+
+* Feature set
+	- official support for running Groovy on JDK 8
+	- traits, as a new object oriented way of composing behavior in your classes
+	- new and improved AST transformations like @TailRecursive, @Builder and @Sortable
+	- a new NIO2 module with Path support
+	- lightening fast JSON parsing and building
+	- closure parameter type inference
+	- a new markup template engine
+	- Groovysh and GroovyConsole ease of use improvements
+	- a new GroovyAssert test utility
+	- more @BaseScript class capabilities, and more.
+
+* Introduces Traits - A trait is a reusable set of methods and fields that can be added to one or more classes. A class can be composed out of multiple traits without using multiple inheritance (and therefore avoiding the diamond problem). [Read further...] (http://java.dzone.com/articles/groovy-23-introduces-traits)
+
+
+Groovy Roadmap
+---------------
+
+[Stay tuned to Groovy releases roadmap...] (http://groovy.codehaus.org/Roadmap)
