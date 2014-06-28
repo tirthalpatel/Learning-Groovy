@@ -1,7 +1,7 @@
 Groovy learning made easy
 =========================
 
-Sample code snippet for getting started with Groovy. Read related blog post [here] (https://github.com/tirthalpatel/Learning-Groovy).
+Sample code snippet for getting started with Groovy. Read related blog post [here] (http://tirthalpatel.blogspot.in/2014/06/why-java-developers-should-learn-Groovy.html).
 
 
 Groovy Setup - installation
