@@ -106,3 +106,8 @@ Groovy Roadmap
 ---------------
 
 [Stay tuned to Groovy releases roadmap...] (http://groovy.codehaus.org/Roadmap)
+
+
+Disclaimer
+----------
+The code snippet are mainly targeted for learning purpose, and not focused for producing production code quality.
