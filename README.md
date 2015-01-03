@@ -28,13 +28,18 @@ Setup instructions for this "GroovyQuickStart" project
 (4) That's it. Now run groovy script files with Groovy Script option (Alt + Shift + X, G) and start exploring code of "*.groovy" files in given sequence of G00*, G01*, G02*...
 
 
-Basic Concepts and Syntax
--------------------------
+ABC of Groovy for Java Developers
+---------------------------------
+[Learn by code snippet] (https://github.com/tirthalpatel/Learning-Groovy/tree/master/src/com/tirthal/learning/java2groovy)
+
+
+Basic Concepts and Syntax in Groovy
+------------------------------------
 [Learn by code snippet] (https://github.com/tirthalpatel/Learning-Groovy/tree/master/src/com/tirthal/learning/basic)
 
 
-Working with XML
-----------------
+Working with XML in Groovy
+--------------------------
 [Learn by code snippet] (https://github.com/tirthalpatel/Learning-Groovy/tree/master/src/com/tirthal/learning/xml)
 
 
@@ -48,8 +53,8 @@ Unit testing in Groovy
 [Learn by code snippet] (https://github.com/tirthalpatel/Learning-Groovy/tree/master/src/com/tirthal/learning/testing)
 
 
-Working with REST services
--------------------------
+Working with REST services in Groovy
+-----------------------------------
 [Learn by code snippet] (https://github.com/tirthalpatel/Learning-Groovy/tree/master/src/com/tirthal/learning/rest)
 
 
@@ -75,6 +80,22 @@ Working with Databases using Groovy
 	- sql.close()
 		
 		
+Disclaimer
+----------
+The code snippet are mainly targeted for learning purpose, and not focused for producing production code quality.
+
+
+
+
+Learn more about Groovy
+=======================
+
+Code References
+----------------
+* [Introduction to Groovy Code] (https://github.com/kousen/IntroGroovy) 
+* [Advanced Groovy Tips and Tricks Presentation by Ken Kousen] (http://www.infoq.com/presentations/groovy-tips) and [Code] (https://github.com/kousen/AdvancedGroovy)
+* [Source code for Manning book "Making Java Groovy"] (https://github.com/kousen/Making-Java-Groovy)
+
 What’s new in Groovy 2.0?
 -------------------------
 	The newly released Groovy 2.0 brings key static features to the language with static type checking and static compilation, 
@@ -82,7 +103,6 @@ What’s new in Groovy 2.0?
 	and becomes more modular than before. 
 	
 [Read further...] (http://www.infoq.com/articles/new-groovy-20)
-
 
 Groovy 2.3 - Finale released in May 2014
 -----------------------------------------
@@ -98,16 +118,10 @@ Groovy 2.3 - Finale released in May 2014
 	- Groovysh and GroovyConsole ease of use improvements
 	- a new GroovyAssert test utility
 	- more @BaseScript class capabilities, and more.
-
+	
 * Introduces Traits - A trait is a reusable set of methods and fields that can be added to one or more classes. A class can be composed out of multiple traits without using multiple inheritance (and therefore avoiding the diamond problem). [Read further...] (http://java.dzone.com/articles/groovy-23-introduces-traits)
-
 
 Groovy Roadmap
 ---------------
 
 [Stay tuned to Groovy releases roadmap...] (http://groovy.codehaus.org/Roadmap)
-
-
-Disclaimer
-----------
-The code snippet are mainly targeted for learning purpose, and not focused for producing production code quality.
