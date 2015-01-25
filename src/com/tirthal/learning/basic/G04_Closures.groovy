@@ -101,3 +101,49 @@ def sum = { n1, n2 -> println "Sum of $n1 and $n2 = " + (n1 + n2)}
 sum.call(1,2)
 
 println "----"
+
+// ------- Example 7 - Strategy pattern using Closure
+def totalSelectValues(n, closure)	// Let the closure to decide the strategy of selecting values for total
+{
+	total = 0
+	for(i in 1..n)
+	{
+		if (closure(i)) { total += i }
+	}
+	total
+}
+
+print "Total of even numbers from 1 to 10 is "
+println totalSelectValues(10) { it % 2 == 0 }	// select only even numbers	
+
+print "Total of odd numbers from 1 to 10 is "
+println totalSelectValues(10) { it % 2 != 0}	// select only odd numbers
+
+println "----"
+
+// -------- Example 8 - Closure and Resource Cleanup
+
+// Traditional approach - developer may forget to call close() on FileWriter
+writer = new FileWriter('output-lost.txt')
+writer.write('!') // forgot to call writer.close(), so the file output-lost.txt will not have the data/character you wrote
+
+// Groovy way - Groovy added withWriter() flushes and closes the stream automatically when you return from the closure
+new FileWriter('output.txt' ).withWriter { writer ->
+	writer.write('x')	// no need to close() - don’t worry about closing the stream; just focus on getting your work done
+} 
+
+println "----"
+
+// -------- Example 9 - Closure properties
+def examine(closure)
+{
+	println "------ $closure.maximumNumberOfParameters parameter(s) given:"	// maximumNumberOfParameters property - tells you the number of parameters the given closure accepts
+	for(aParameter in closure.parameterTypes) { println aParameter.name }	// parameterTypes property - determine the types of these parameters
+}
+examine() { }
+examine() { it }
+examine() {-> }
+examine() { val1 -> }
+examine() {Date val1 -> }
+examine() {Date val1, val2 -> }
+examine() {Date val1, String val2 -> }

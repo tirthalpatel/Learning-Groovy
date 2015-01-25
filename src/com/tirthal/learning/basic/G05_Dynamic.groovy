@@ -28,3 +28,33 @@ println v3 + " - " + v3.getClass()
 // Groovy does support static types as well
 Date x = new Date();
 println x
+
+// -----------------------------------------------------------------------------------------------------------
+// ------- "Design by Capability" using Dynamic typing instead of Design by contract/interface approach ------
+// -----------------------------------------------------------------------------------------------------------
+// The payment() method accepts a paymentMode but does not specify its type, rather it defaults to an Object
+class CreditCard {
+	void pay() {
+		println "paying using credit card..."
+	}
+}
+
+class DebitCard {
+	void pay() {
+		println "paying using debit card..."
+	}
+}
+
+class Cash {
+	// Sorry not having capability to pay
+}
+
+def payment(paymentMode) { // This is not an design by contract, rather design by capability implementation
+	if(paymentMode.metaClass.respondsTo(paymentMode, "pay")) {	// check if paymentMode is having capability to pay?
+		paymentMode.pay();
+	}	
+}
+
+payment(new CreditCard())
+payment(new DebitCard())
+payment(new Cash())
