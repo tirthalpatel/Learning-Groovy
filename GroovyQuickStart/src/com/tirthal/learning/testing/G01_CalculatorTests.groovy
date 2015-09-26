@@ -55,7 +55,7 @@ class G01_CalculatorTests extends GroovyTestCase {
 		println "In test numbers must be positive to multiply"
 		shouldFail(G01_CalculatorNegativeUnsupportedException) {
 			// Only CalculatorNegativeUnsupportedException type of exception is valid/acceptable, otherwise fail the test case
-			calc.add(10, -20) // Replace -20 with 20 to see error
+			calc.multiply(10, -20) // Replace -20 with 20 to see error
 		}
 	}
 
